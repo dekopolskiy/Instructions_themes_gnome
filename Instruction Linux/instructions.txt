@@ -1,0 +1,4 @@
+https://losst.ru/ustanovka-tem-v-ubuntu
+темы перемещать в /usr/share/themes/
+
+нижняя панель : расширение dash to dock
