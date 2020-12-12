@@ -1,3 +1,25 @@
+https://losst.ru/luchshie-temy-dlya-gnome-3
+_______________________________________
+sudo apt-get install gnome-shell-extensions
+reboot os
+
+gnome, расширения, reboot gnome
+
+скачать тему tar
+https://www.gnome-look.org/p/1203425/
+
+tar xvf ...
+переместить в  mv /usr/share/themes/
+
+перезапуск gnome
+
+в shell теперь доступна другая тема
+_____________________________________
+
+
+https://losst.ru/ustanovka-rasshirenij-gnome-shell
+
+______________________________________
 https://losst.ru/ustanovka-tem-v-ubuntu
 темы перемещать в /usr/share/themes/
 
