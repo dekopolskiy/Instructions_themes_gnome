@@ -1,0 +1,25 @@
+1.Скачиваешь любую Linux,
+2.Через руфус ставишь gpt раздел и ставишь образ
+3.Грузишь из под флешки,заходишь в Try Ubuntu.
+2.В терминале sudo su
+	fdisk -l покажет dev/sda где корень Linux,куда устанавливал
+	сейчас это /dev/sda8
+	mount /dev/sda8 /mnt/
+	также EFI раздел
+	mount /dev/sda2 /mnt/boot/efi
+	mount --bind /dev/ /mnt/dev/
+	mount --bind /proc/ /mnt/proc/
+	mount --bind /sys/ /mnt/sys/
+chroot /mnt/ 
+	grub-install /dev/sda
+	должно пройти без ошибок
+    update-grub
+    exit
+    umount /dev/sda2 /mnt/boot/efi
+    umount /mnt/dev/
+    umount /mnt/proc/
+    umount /mnt/sys/
+    umount /mnt/boot/efi
+    reboot
+    Затем в самой Убунту в терминале 
+    sudo update-grub чтобы виндовс не исчезала в граб
